@@ -1,0 +1,7 @@
+.btn-scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+
+  animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite;
+}

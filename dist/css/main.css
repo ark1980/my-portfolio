@@ -1,6 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500");
-* {
+@keyframes moveInMouse {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); }
+  80% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRigth {
+  0% {
+    opacity: 0;
+    transform: translateX(250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes rotateLogo {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg); }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg); } }
+
+@keyframes infiniteMouseBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  50% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -9,11 +57,19 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.7;
-  color: #fff;
   height: 100%;
   background-color: #27282C; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: #fff; }
+
+.btn-scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite; }
 
 .header {
   height: 100vh;
@@ -63,54 +119,3 @@ body {
         font-size: 2rem;
         color: #757575;
         padding-top: 10px; }
-  .header .btn-scroll-down {
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite; }
-
-@keyframes moveInMouse {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px); }
-  80% {
-    opacity: 1;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInRigth {
-  0% {
-    opacity: 0;
-    transform: translateX(250px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes rotateLogo {
-  0% {
-    opacity: 0;
-    transform: rotateY(180deg); }
-  100% {
-    opacity: 1;
-    transform: rotateY(360deg); } }
-
-@keyframes infiniteMouseBtn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px); }
-  50% {
-    opacity: 1;
-    transform: translateY(0); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
