@@ -1,2 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
 body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: #fff;
+  height: 100%;
   background-color: #27282C; }
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .header .logo-box {
+    align-self: flex-start;
+    margin: 60px 0 0 65px;
+    animation: rotateLogo 2s ease-out;
+    backface-visibility: hidden; }
+  .header .header__text-box {
+    max-width: 90vw;
+    position: absolute;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column; }
+    .header .header__text-box .header-name {
+      position: relative;
+      font-family: "Hind Siliguri", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 10rem;
+      margin: 0;
+      padding: 0;
+      animation: moveInLeft 2s ease-out; }
+      .header .header__text-box .header-name .header-last-name {
+        color: #E82363; }
+    .header .header__text-box .header-name::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid #757575; }
+    .header .header__text-box .header-main {
+      padding: 20px 0;
+      font-weight: 300;
+      letter-spacing: .1rem;
+      animation: moveInRigth 2s ease-out; }
+      .header .header__text-box .header-main .header-greeting {
+        display: block;
+        font-size: 3rem; }
+      .header .header__text-box .header-main .header-description {
+        display: block;
+        font-size: 2rem;
+        color: #757575;
+        padding-top: 10px; }
+  .header .btn-scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite; }
+
+@keyframes moveInMouse {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); }
+  80% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRigth {
+  0% {
+    opacity: 0;
+    transform: translateX(250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes rotateLogo {
+  0% {
+    opacity: 0;
+    transform: rotateY(180deg); }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg); } }
+
+@keyframes infiniteMouseBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  50% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
