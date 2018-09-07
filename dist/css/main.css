@@ -51,9 +51,10 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%; }
 
 body {
@@ -70,6 +71,20 @@ body {
   left: 50%;
   bottom: 50px;
   animation: moveInMouse 3s ease-out, infiniteMouseBtn 2s ease-in-out 7s infinite; }
+
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.8rem 3.5rem;
+  color: #fff;
+  background-color: #E82363;
+  text-decoration: none;
+  border: 1px solid #E82363;
+  transition: all .3s; }
+
+.btn:hover {
+  background-color: #fff;
+  color: #E82363; }
 
 .header {
   height: 100vh;
@@ -119,3 +134,64 @@ body {
         font-size: 2rem;
         color: #757575;
         padding-top: 10px; }
+
+.main {
+  background-color: #fff;
+  color: #27282C;
+  width: 100vw; }
+
+.about-me {
+  padding: 15rem 0;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .about-me-img {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+    width: 40%; }
+  .about-me-text {
+    position: relative;
+    width: 60%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400; }
+    .about-me-text .about-me-heading {
+      width: 27.2rem;
+      position: relative;
+      line-height: 1.3;
+      text-transform: uppercase;
+      margin-bottom: 2rem; }
+      .about-me-text .about-me-heading h1 {
+        font-size: 4.8rem;
+        font-weight: 600; }
+      .about-me-text .about-me-heading hr {
+        width: 50%;
+        float: left;
+        border: 1px solid #27282C;
+        position: absolute;
+        margin-top: 1.5rem; }
+      .about-me-text .about-me-heading p {
+        float: right;
+        color: #E82363;
+        font-size: 2.4rem;
+        font-weight: 600; }
+    .about-me-text .about-me-details p {
+      margin-bottom: 1.5rem; }
+    .about-me-text .about-me-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 4rem; }
+      .about-me-text .about-me-links .social-icons {
+        margin: .6rem 4rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        align-items: center; }
