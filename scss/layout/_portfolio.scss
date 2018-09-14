@@ -1,0 +1,73 @@
+.portfolio {
+  padding-top: 25rem;
+  width:100vw;
+  // height: 100vh;
+  
+  & .poly-shape {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & .left-poly {
+      left:0;
+      position: absolute;
+      width:100%;
+      height: 400px;
+      clip-path: polygon(0 0, 48% 0, 40% 100%, 0 100%);
+      background: linear-gradient(90deg, rgba(255,0,78,1) 0%, rgba(232,35,99,1) 100%);
+      z-index: 10;
+      display: flex;
+
+      & .page-header {
+        width: 28.6rem;
+        align-self: center;
+        margin-left: 10%;
+
+        & p {
+          color: $white;
+          font-weight: 400;
+        }
+
+        & .hr-line {
+          width: 54%;
+        }
+      }
+
+    }
+    
+    & .right-poly {
+      position: absolute;
+      right: 0;
+      width:100%;  
+      height: 360px;
+      background-color: #27282C;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      
+      & .right-poly-box {
+        text-align: left;
+        margin-right: 10%;
+        align-self: flex-end;
+        color: $color-secondary;
+        
+        h2 {
+          font-weight: 500;
+          font-size: 1.6rem;
+          letter-spacing: .1rem;
+        }
+
+        & .right-poly-icons {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          margin-top:2.6rem;
+        }
+      }
+    }
+  }
+
+}

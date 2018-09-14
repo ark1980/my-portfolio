@@ -1,7 +1,50 @@
 .skills {
-  padding-top: 15rem;
+  padding-top: 20rem;
   width: 80vw;
+  // height: 100vh;
   margin:0 auto;
   display: flex;
   flex-wrap: wrap;
+
+  .page-header {
+    width: 17rem;
+    
+    .page-header-text .hr-line {
+      width: 22%;
+    }
+
+    .page-header-text p {
+      font-size: 1.7rem;
+    }
+  }
+  
+  & .skills-columns {
+    margin-top:6.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    & h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    & p {
+      font-size: 1.8rem;
+      margin-left: 1.1rem;
+    }
+
+    & .skills-column {
+      display: flex;
+      flex-direction: column;
+
+      & .skill {
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
