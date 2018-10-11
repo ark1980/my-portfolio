@@ -1,0 +1,34 @@
+.footer {
+  background-color: $color-secondary;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &-text {
+
+    h2 {
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+
+    span {
+      color: $color-primary;
+      font-weight: 600;
+    }
+  }
+
+  &-social-icons {
+    
+    img {
+      width: 3rem;
+    }
+
+    a:not(last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}

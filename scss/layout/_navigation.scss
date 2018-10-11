@@ -1,0 +1,33 @@
+.navigation {
+
+  &-checkbox {
+
+  }
+
+  &-button {
+    position: fixed;
+    top: 6rem;
+    right: 6.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: $white;
+    color: black;
+    z-index: 1000;
+  }
+
+  &-background {
+    position: fixed;
+    top: 6rem;
+    right: 6.5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#e82363, #ff004e);
+    z-index: 2000;
+  }
+
+  &-nav {
+
+  }
+}

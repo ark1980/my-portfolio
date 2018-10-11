@@ -2,7 +2,10 @@
   width: 80%;
   margin: 15rem auto;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
+  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+  
 
   .project {
     display: flex;
@@ -10,7 +13,6 @@
     justify-content: center;
     background-color: $white;
     border: .1rem solid #707070;
-    margin: 0 2rem;
 
     figure {
         overflow: hidden;
@@ -84,7 +86,7 @@
 
         h2 {
             font-size: 2rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
         }
         

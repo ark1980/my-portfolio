@@ -13,6 +13,23 @@
 </head>
 <body>
 
+  <!-- Navigation-->
+  <div class="navigation">
+    <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation-button">MENU</label>
+
+    <div class="navigatio-background">&nbsp;</div>
+    <div class="navigation-nav">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-link" href="#">Home</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="#">About me</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="#">Skills</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="#">Portfolio</a></li> 
+        <li class="navigation-item"><a class="navigation-link" href="#">Get in touch</a></li> 
+      </ul>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="header">
     <div class="logo-box">
@@ -38,7 +55,7 @@
 
   <!-- Main -->
   <main class="main">
-    <section class="about-me">
+    <section class="about-me" id="about">
       <div class="about-me-img">
         <figure>
           <img src="./images/about.png" alt="about" width="500" height="488">
@@ -272,15 +289,78 @@
             </div>    
         </div>
 
+        <div class="project">
+          <figure>
+            <img src="./images/my-work/04.jpg" alt="">
+  
+            <figcaption>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <img src="./images/my-work/Asset 3.svg" alt="" class="techs">
+              <a href="#">See Project</a>
+            </figcaption>
+          </figure>
+            <div class="project-info">
+              <h2>Project Name</h2>
+              <p>Web Development</p>
+            </div>    
+        </div>
+
         
+      </div>
+    </section>
+    
+    <!-- Contact Me -->
+    <section class="contact-page">
+      <!-- modal -->
+      <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent">
+        </div>
+      </div>
+
+      <h1>get in touch</h1>
+      <div class="contact-form">
+        <form id="contact-form" class="form" accept-charset="UTF-8" method="POST">
+          <div class="form-group">
+            <input id="name" type="text" placeholder="Full name" class="form-input" id="name" required>
+            <label for="name" class="form-label">Full name</label>
+          </div>
+          <div class="form-group">
+            <input id="email" type="email" placeholder="Email address" class="form-input" id="email" required>
+            <label for="email" class="form-label">Email address</label>
+          </div>
+          <div class="form-group">
+            <input id="subject" type="text" placeholder="Subject" class="form-input" id="subject" required>
+            <label for="subject" class="form-label">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Message" class="form-textarea" rows="15" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn form-btn" value="send now">
+          </div>
+        </form>
       </div>
     </section>
   </main>
   
-
   <!-- Footer -->
   <footer class="footer">
-
+    <div class="footer-text">
+      <h2>Designed and Developed by <span>Ali Keshanian</span> &copy; 2018</h2>
+    </div>
+    <div class="footer-social-icons social-icons">
+      <a href="https://www.linkedin.com/in/ark1980/" target="_blank"><img src="./images/linkedin-brands.png" alt="linkedIn Icon"></a>
+      <a href="https://github.com/ark1980" target="_blank"><img src="./images/github-square-brands.png" alt="Github Icon"></a>
+      <a href="https://codepen.io/ark1980/" target="_blank"><img src="./images/codepen-brands.png" alt="Codepen Icon"></a>
+      <a href="https://codesandbox.io/u/ark1980" target="_blank"><img src="./images/codesandbox.png" alt="Codesandbox Icon"></a>
+    </div>
   </footer>
+  
+
+  
+  <!-- JS Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

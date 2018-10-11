@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "sweetalert": "^2.1.0"
   }
 }
